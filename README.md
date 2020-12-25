@@ -1,5 +1,5 @@
 # mbed-boilerplate
-A repository with MbedOS boilerplate code using mbed-cmake as the build system, googletest for unit tests, and mbed-benchtest for Hardware-out-of-the-Loop (HOOTL) tests. It relies on CMake for building the code and supports various upload methods.
+A repository with MbedOS boilerplate code using [mbed-cmake](https://github.com/USCRPL/mbed-cmake) as the build system, GoogleTest for unit tests, and [mbed-benchtest](https://github.com/USCRPL/mbed-benchtest) for Hardware-out-of-the-Loop (HOOTL) tests. It relies on CMake for building the code and supports various upload methods.
 
 ## Quick start
 Simply clone this repository, delete any code you don't need, and start writing your code! (Definitely try building all targets after you delete things so you make sure you didn't miss anything).
@@ -12,7 +12,7 @@ Today's embedded workflows require very rigorous and extensive testing at every 
 1. **Hardware and hardware driver testing**: To validate the hardware be free of malfunction and to provide testing of drivers (and wrappers) on the same level as unit-testing of core-logic code of our application, we need certain smaller targets that only include those that we can then run on the hardware. We plan on adding support for Mbed's included testing capabilities (Greentea etc.).
 
 ## Directory structure
-- `unit-tests` includes the unit tests with the accompanying infrastructure (googletest, mocks, stubs, etc.). It pulls the code under test from `firmware`.
+- `unit-tests` includes the unit tests with the accompanying infrastructure (GoogleTest, mocks, stubs, etc.). It pulls the code under test from `firmware`.
 - `hootl` includes the hootl tests and infrastructure (mbed-benchtest as well as additional stubs that simulate abstracted components).
 - `firmware` includes the core application code, drivers/wrappers, hardware tests, and uses the mbed-cmake build system to build hardware targets (both tests and production applications). It also contans upload logic.
 
@@ -25,4 +25,4 @@ Currently, the firmware directory is quite "beefy" and has quite a few responsib
 In the future, we might shift to using Mbed's own CMake build system, as soon as their uploads methods, reliability, and flexibility exceed that of mbed-cmake. It can also be easily used with minor adjustments to only the `CMakeLists.txt` inside the `firmware` directory.
 
 ## Contributing
-Help us with mbed-benchtest and/or create a PR to this repository. You can also let us know your problems/comments/thoughts by creating issues. More documentation is coming soon.
+Help us with [mbed-benchtest](https://github.com/USCRPL/mbed-benchtest) and/or create a PR to this repository. You can also let us know your problems/comments/thoughts by creating issues. More documentation is coming soon.
