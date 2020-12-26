@@ -1,0 +1,9 @@
+[submodule "firmware/lib/mbed-cmake"]
+	path = firmware/lib/mbed-cmake
+	url = https://github.com/USCRPL/mbed-cmake.git
+[submodule "unit-test/lib/googletest"]
+	path = unit-test/lib/googletest
+	url = https://github.com/google/googletest.git
+[submodule "hootl/lib/mbed-benchtest"]
+	path = hootl/lib/mbed-benchtest
+	url = https://github.com/USCRPL/mbed-benchtest.git
