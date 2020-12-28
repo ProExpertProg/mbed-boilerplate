@@ -4,7 +4,8 @@ A repository with MbedOS boilerplate code using [mbed-cmake](https://github.com/
 ## Quick start
 1. Clone this repository (recursively)
 1. Delete any code you don't need
-1. Configure your project (recommended spots are marked with TODO, and have a look at [CMake Profiles](#cmake-profiles))
+1. Adjust your project (recommended spots are marked with TODO, and have a look at [CMake Profiles](#cmake-profiles))
+1. Configure mbed-cmake for your target processor. More instructions [here](https://github.com/USCRPL/mbed-cmake/wiki/Project-Configuration)
 1. Start writing your code!
    
 Definitely try building all targets after you delete things so you make sure you didn't miss anything.

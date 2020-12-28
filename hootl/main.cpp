@@ -1,11 +1,12 @@
 #include <iostream>
 #include <chrono>
+#include <rtos.h>
 
 using namespace std;
 using namespace std::chrono_literals;
 
 extern "C" int mbed_start() {
-    std::cout << "Hello, World!" << std::endl;
+    cout << "Hello, World!" << endl;
     ThisThread::sleep_for(1s);
     cout << "Done! Now ending" << endl;
     exit(0);

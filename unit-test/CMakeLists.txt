@@ -1,7 +1,6 @@
 project(unit-tests LANGUAGES CXX)
 
-set(BUILD_GMOCK TRUE)
-add_subdirectory(lib/googletest)
+add_subdirectory(lib/googletest EXCLUDE_FROM_ALL) # gmock built by default
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR} ${gmock_SOURCE_DIR}/include ${gmock_SOURCE_DIR})
 
 include(UnitTest.cmake)
